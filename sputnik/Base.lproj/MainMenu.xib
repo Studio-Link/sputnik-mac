@@ -673,14 +673,14 @@
         </menu>
         <window title="StudioLonk Sputnik" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="sputnik.window" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="100" y="1009" width="655" height="336"/>
+            <rect key="contentRect" x="100" y="1009" width="807" height="336"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-            <view key="contentView" wantsLayer="YES" misplaced="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="655" height="336"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="807" height="336"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-gs-6Bz">
-                        <rect key="frame" x="340" y="263" width="295" height="33"/>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-gs-6Bz">
+                        <rect key="frame" x="416" y="263" width="371" height="33"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="33" id="BLN-bE-fP0"/>
                         </constraints>
@@ -702,8 +702,8 @@
                             </binding>
                         </connections>
                     </textField>
-                    <button focusRingType="none" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMu-kP-dQO" customClass="CallButton">
-                        <rect key="frame" x="288" y="163" width="80" height="80"/>
+                    <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RMu-kP-dQO" customClass="CallButton">
+                        <rect key="frame" x="364" y="163" width="80" height="80"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="PNZ-1z-HYN"/>
                             <constraint firstAttribute="height" constant="80" id="u8c-1V-abk"/>
@@ -717,8 +717,8 @@
                             <binding destination="4pU-mt-PWV" name="enabled" keyPath="selection.remoteID.length" id="DqO-i1-yBl"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-rH-YUX">
-                        <rect key="frame" x="20" y="263" width="295" height="33"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-rH-YUX">
+                        <rect key="frame" x="20" y="263" width="371" height="33"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="myID" drawsBackground="YES" usesSingleLineMode="YES" id="aVo-Ut-DJL">
                             <font key="font" metaFont="systemLight" size="22"/>
                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -742,30 +742,30 @@
                             <action selector="prefsClicked:" target="Voe-Tx-rLC" id="WG7-zw-hwt"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCG-jO-PNl">
-                        <rect key="frame" x="18" y="304" width="299" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yCG-jO-PNl">
+                        <rect key="frame" x="18" y="304" width="375" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="My Number" id="qm1-ea-fXL">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-H0-xZh">
-                        <rect key="frame" x="338" y="304" width="299" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-H0-xZh">
+                        <rect key="frame" x="414" y="304" width="375" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Remote Number" id="XbL-Sf-9aK">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n75-qD-PZt" customClass="LevelMeterView">
-                        <rect key="frame" x="181" y="98" width="134" height="20"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="n75-qD-PZt" customClass="LevelMeterView">
+                        <rect key="frame" x="219" y="98" width="172" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="LaH-SV-adH"/>
                         </constraints>
                     </customView>
-                    <button focusRingType="none" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPD-dU-jKF" customClass="CallButton">
-                        <rect key="frame" x="218" y="176" width="55" height="55"/>
+                    <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iPD-dU-jKF" customClass="CallButton">
+                        <rect key="frame" x="294" y="176" width="55" height="55"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="55" id="Lq9-Tl-ezB"/>
                             <constraint firstAttribute="height" constant="55" id="cOG-kq-rv2"/>
@@ -775,8 +775,8 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <button focusRingType="none" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Fz-1i-Hi9" customClass="CallButton">
-                        <rect key="frame" x="383" y="176" width="55" height="55"/>
+                    <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Fz-1i-Hi9" customClass="CallButton">
+                        <rect key="frame" x="459" y="176" width="55" height="55"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="55" id="p5y-Br-lhR"/>
                             <constraint firstAttribute="width" constant="55" id="qqf-LZ-1qm"/>
@@ -786,16 +786,16 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-f3-gkb">
-                        <rect key="frame" x="51" y="24" width="587" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-f3-gkb">
+                        <rect key="frame" x="51" y="24" width="739" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status" id="Ndb-gF-Xrt">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haY-AR-mnx">
-                        <rect key="frame" x="23" y="95" width="153" height="25"/>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="haY-AR-mnx">
+                        <rect key="frame" x="23" y="95" width="191" height="25"/>
                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="WaJ-90-yOl">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -810,8 +810,8 @@
                             </menu>
                         </popUpButtonCell>
                     </popUpButton>
-                    <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jN-Z4-8DB">
-                        <rect key="frame" x="343" y="93" width="153" height="26"/>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2jN-Z4-8DB">
+                        <rect key="frame" x="419" y="93" width="191" height="26"/>
                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="ThZ-sI-Npo">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -824,24 +824,24 @@
                             </menu>
                         </popUpButtonCell>
                     </popUpButton>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soP-fT-Tx7">
-                        <rect key="frame" x="23" y="126" width="299" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="soP-fT-Tx7">
+                        <rect key="frame" x="23" y="126" width="375" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Microphone Device" id="Hjv-zy-FfZ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-HO-RzJ">
-                        <rect key="frame" x="343" y="126" width="299" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-HO-RzJ">
+                        <rect key="frame" x="419" y="126" width="375" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Headphone Device" id="Tc5-Ep-5FC">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1w-Xq-rse" customClass="LevelMeterView">
-                        <rect key="frame" x="501" y="96" width="134" height="21"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="a1w-Xq-rse" customClass="LevelMeterView">
+                        <rect key="frame" x="615" y="96" width="172" height="21"/>
                     </customView>
                 </subviews>
                 <constraints>
@@ -894,7 +894,7 @@
                     <constraint firstItem="2jN-Z4-8DB" firstAttribute="width" secondItem="L2I-HO-RzJ" secondAttribute="width" multiplier="0.5" id="xsB-PV-Sok"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="112.5" y="-346"/>
+            <point key="canvasLocation" x="186.5" y="-346"/>
         </window>
         <button verticalHuggingPriority="750" id="SuH-Ri-78F">
             <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>

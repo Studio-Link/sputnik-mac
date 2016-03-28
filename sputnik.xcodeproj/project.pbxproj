@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9EEE68F1CA6101D008D0A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE68E1CA6101D008D0A05 /* AppDelegate.m */; };
+		A9EEE6921CA6101D008D0A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6911CA6101D008D0A05 /* main.m */; };
+		A9EEE6941CA6101D008D0A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6931CA6101D008D0A05 /* Assets.xcassets */; };
+		A9EEE6971CA6101D008D0A05 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6951CA6101D008D0A05 /* MainMenu.xib */; };
+		A9EEE6A21CA6101D008D0A05 /* sputnikUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6A11CA6101D008D0A05 /* sputnikUITests.m */; };
+		A9EEE6AF1CA614D4008D0A05 /* PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6AD1CA614D4008D0A05 /* PrefsController.m */; };
+		A9EEE6B01CA614D4008D0A05 /* PrefsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6AE1CA614D4008D0A05 /* PrefsController.xib */; };
+		A9EEE6B71CA746CC008D0A05 /* phone-pickup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6B61CA746CC008D0A05 /* phone-pickup.pdf */; };
+		A9EEE6BA1CA74C4F008D0A05 /* phone-pickup-alternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6B91CA74C4F008D0A05 /* phone-pickup-alternative.pdf */; };
+		A9EEE6BD1CA74ED1008D0A05 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6BC1CA74ED1008D0A05 /* State.m */; };
+		A9EEE6BF1CA871A4008D0A05 /* cogwheel.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6BE1CA871A4008D0A05 /* cogwheel.pdf */; };
+		A9EEE6C11CA871F7008D0A05 /* cogwheel-alternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6C01CA871F7008D0A05 /* cogwheel-alternative.pdf */; };
+		A9EEE6CB1CA8750B008D0A05 /* LevelMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6CA1CA8750B008D0A05 /* LevelMeterView.m */; };
+		A9EEE6CE1CA87FD6008D0A05 /* CallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6CD1CA87FD6008D0A05 /* CallButton.m */; };
+		A9EEE6D01CA89766008D0A05 /* phone-hangup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6CF1CA89766008D0A05 /* phone-hangup.pdf */; };
+		A9EEE6D21CA897E7008D0A05 /* phone-hangup-aternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6D11CA897E7008D0A05 /* phone-hangup-aternative.pdf */; };
+		A9EEE6D51CA8AE4D008D0A05 /* mute-muted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6D31CA8AE4D008D0A05 /* mute-muted.pdf */; };
+		A9EEE6D61CA8AE4D008D0A05 /* mute-open.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6D41CA8AE4D008D0A05 /* mute-open.pdf */; };
+		A9EEE6D91CA8B364008D0A05 /* record-ready.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6D71CA8B364008D0A05 /* record-ready.pdf */; };
+		A9EEE6DA1CA8B364008D0A05 /* record-recording.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6D81CA8B364008D0A05 /* record-recording.pdf */; };
+		A9EEE6DC1CA9652D008D0A05 /* window-background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6DB1CA9652D008D0A05 /* window-background.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9EEE69E1CA6101D008D0A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9EEE6821CA6101C008D0A05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9EEE6891CA6101C008D0A05;
+			remoteInfo = sputnik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9EEE68A1CA6101C008D0A05 /* Sputnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sputnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EEE68D1CA6101C008D0A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9EEE68E1CA6101D008D0A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9EEE6911CA6101D008D0A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9EEE6931CA6101D008D0A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9EEE6961CA6101D008D0A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A9EEE6981CA6101D008D0A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EEE69D1CA6101D008D0A05 /* sputnikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sputnikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EEE6A11CA6101D008D0A05 /* sputnikUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sputnikUITests.m; sourceTree = "<group>"; };
+		A9EEE6A31CA6101D008D0A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EEE6AC1CA614D4008D0A05 /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsController.h; sourceTree = "<group>"; };
+		A9EEE6AD1CA614D4008D0A05 /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsController.m; sourceTree = "<group>"; };
+		A9EEE6AE1CA614D4008D0A05 /* PrefsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsController.xib; sourceTree = "<group>"; };
+		A9EEE6B61CA746CC008D0A05 /* phone-pickup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-pickup.pdf"; path = "sputnik/assets/phone-pickup.pdf"; sourceTree = "<group>"; };
+		A9EEE6B91CA74C4F008D0A05 /* phone-pickup-alternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-pickup-alternative.pdf"; path = "sputnik/assets/phone-pickup-alternative.pdf"; sourceTree = "<group>"; };
+		A9EEE6BB1CA74ED1008D0A05 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		A9EEE6BC1CA74ED1008D0A05 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		A9EEE6BE1CA871A4008D0A05 /* cogwheel.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = cogwheel.pdf; path = sputnik/assets/cogwheel.pdf; sourceTree = "<group>"; };
+		A9EEE6C01CA871F7008D0A05 /* cogwheel-alternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "cogwheel-alternative.pdf"; path = "sputnik/assets/cogwheel-alternative.pdf"; sourceTree = "<group>"; };
+		A9EEE6C91CA8750B008D0A05 /* LevelMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelMeterView.h; sourceTree = "<group>"; };
+		A9EEE6CA1CA8750B008D0A05 /* LevelMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelMeterView.m; sourceTree = "<group>"; };
+		A9EEE6CC1CA87FD6008D0A05 /* CallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallButton.h; sourceTree = "<group>"; };
+		A9EEE6CD1CA87FD6008D0A05 /* CallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallButton.m; sourceTree = "<group>"; };
+		A9EEE6CF1CA89766008D0A05 /* phone-hangup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-hangup.pdf"; path = "sputnik/assets/phone-hangup.pdf"; sourceTree = "<group>"; };
+		A9EEE6D11CA897E7008D0A05 /* phone-hangup-aternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-hangup-aternative.pdf"; path = "sputnik/assets/phone-hangup-aternative.pdf"; sourceTree = "<group>"; };
+		A9EEE6D31CA8AE4D008D0A05 /* mute-muted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "mute-muted.pdf"; path = "sputnik/assets/mute-muted.pdf"; sourceTree = "<group>"; };
+		A9EEE6D41CA8AE4D008D0A05 /* mute-open.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "mute-open.pdf"; path = "sputnik/assets/mute-open.pdf"; sourceTree = "<group>"; };
+		A9EEE6D71CA8B364008D0A05 /* record-ready.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "record-ready.pdf"; path = "sputnik/assets/record-ready.pdf"; sourceTree = "<group>"; };
+		A9EEE6D81CA8B364008D0A05 /* record-recording.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "record-recording.pdf"; path = "sputnik/assets/record-recording.pdf"; sourceTree = "<group>"; };
+		A9EEE6DB1CA9652D008D0A05 /* window-background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "window-background.pdf"; path = "sputnik/assets/window-background.pdf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9EEE6871CA6101C008D0A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EEE69A1CA6101D008D0A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9EEE6811CA6101C008D0A05 = {
+			isa = PBXGroup;
+			children = (
+				A9EEE6B81CA746D5008D0A05 /* assets */,
+				A9EEE68C1CA6101C008D0A05 /* sputnik */,
+				A9EEE6A01CA6101D008D0A05 /* sputnikUITests */,
+				A9EEE68B1CA6101C008D0A05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9EEE68B1CA6101C008D0A05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9EEE68A1CA6101C008D0A05 /* Sputnik.app */,
+				A9EEE69D1CA6101D008D0A05 /* sputnikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9EEE68C1CA6101C008D0A05 /* sputnik */ = {
+			isa = PBXGroup;
+			children = (
+				A9EEE68D1CA6101C008D0A05 /* AppDelegate.h */,
+				A9EEE68E1CA6101D008D0A05 /* AppDelegate.m */,
+				A9EEE6931CA6101D008D0A05 /* Assets.xcassets */,
+				A9EEE6951CA6101D008D0A05 /* MainMenu.xib */,
+				A9EEE6981CA6101D008D0A05 /* Info.plist */,
+				A9EEE6901CA6101D008D0A05 /* Supporting Files */,
+				A9EEE6AC1CA614D4008D0A05 /* PrefsController.h */,
+				A9EEE6AD1CA614D4008D0A05 /* PrefsController.m */,
+				A9EEE6AE1CA614D4008D0A05 /* PrefsController.xib */,
+				A9EEE6BB1CA74ED1008D0A05 /* State.h */,
+				A9EEE6BC1CA74ED1008D0A05 /* State.m */,
+				A9EEE6C91CA8750B008D0A05 /* LevelMeterView.h */,
+				A9EEE6CA1CA8750B008D0A05 /* LevelMeterView.m */,
+				A9EEE6CC1CA87FD6008D0A05 /* CallButton.h */,
+				A9EEE6CD1CA87FD6008D0A05 /* CallButton.m */,
+			);
+			path = sputnik;
+			sourceTree = "<group>";
+		};
+		A9EEE6901CA6101D008D0A05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9EEE6911CA6101D008D0A05 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9EEE6A01CA6101D008D0A05 /* sputnikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9EEE6A11CA6101D008D0A05 /* sputnikUITests.m */,
+				A9EEE6A31CA6101D008D0A05 /* Info.plist */,
+			);
+			path = sputnikUITests;
+			sourceTree = "<group>";
+		};
+		A9EEE6B81CA746D5008D0A05 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A9EEE6B61CA746CC008D0A05 /* phone-pickup.pdf */,
+				A9EEE6B91CA74C4F008D0A05 /* phone-pickup-alternative.pdf */,
+				A9EEE6BE1CA871A4008D0A05 /* cogwheel.pdf */,
+				A9EEE6C01CA871F7008D0A05 /* cogwheel-alternative.pdf */,
+				A9EEE6CF1CA89766008D0A05 /* phone-hangup.pdf */,
+				A9EEE6D11CA897E7008D0A05 /* phone-hangup-aternative.pdf */,
+				A9EEE6D31CA8AE4D008D0A05 /* mute-muted.pdf */,
+				A9EEE6D41CA8AE4D008D0A05 /* mute-open.pdf */,
+				A9EEE6D71CA8B364008D0A05 /* record-ready.pdf */,
+				A9EEE6D81CA8B364008D0A05 /* record-recording.pdf */,
+				A9EEE6DB1CA9652D008D0A05 /* window-background.pdf */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9EEE6891CA6101C008D0A05 /* Sputnik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EEE6A61CA6101D008D0A05 /* Build configuration list for PBXNativeTarget "Sputnik" */;
+			buildPhases = (
+				A9EEE6861CA6101C008D0A05 /* Sources */,
+				A9EEE6871CA6101C008D0A05 /* Frameworks */,
+				A9EEE6881CA6101C008D0A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sputnik;
+			productName = sputnik;
+			productReference = A9EEE68A1CA6101C008D0A05 /* Sputnik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9EEE69C1CA6101D008D0A05 /* sputnikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EEE6A91CA6101D008D0A05 /* Build configuration list for PBXNativeTarget "sputnikUITests" */;
+			buildPhases = (
+				A9EEE6991CA6101D008D0A05 /* Sources */,
+				A9EEE69A1CA6101D008D0A05 /* Frameworks */,
+				A9EEE69B1CA6101D008D0A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9EEE69F1CA6101D008D0A05 /* PBXTargetDependency */,
+			);
+			name = sputnikUITests;
+			productName = sputnikUITests;
+			productReference = A9EEE69D1CA6101D008D0A05 /* sputnikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9EEE6821CA6101C008D0A05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Studiolink;
+				TargetAttributes = {
+					A9EEE6891CA6101C008D0A05 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A9EEE69C1CA6101D008D0A05 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A9EEE6891CA6101C008D0A05;
+					};
+				};
+			};
+			buildConfigurationList = A9EEE6851CA6101C008D0A05 /* Build configuration list for PBXProject "sputnik" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9EEE6811CA6101C008D0A05;
+			productRefGroup = A9EEE68B1CA6101C008D0A05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9EEE6891CA6101C008D0A05 /* Sputnik */,
+				A9EEE69C1CA6101D008D0A05 /* sputnikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9EEE6881CA6101C008D0A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EEE6BF1CA871A4008D0A05 /* cogwheel.pdf in Resources */,
+				A9EEE6D01CA89766008D0A05 /* phone-hangup.pdf in Resources */,
+				A9EEE6B71CA746CC008D0A05 /* phone-pickup.pdf in Resources */,
+				A9EEE6C11CA871F7008D0A05 /* cogwheel-alternative.pdf in Resources */,
+				A9EEE6D21CA897E7008D0A05 /* phone-hangup-aternative.pdf in Resources */,
+				A9EEE6D51CA8AE4D008D0A05 /* mute-muted.pdf in Resources */,
+				A9EEE6DA1CA8B364008D0A05 /* record-recording.pdf in Resources */,
+				A9EEE6D61CA8AE4D008D0A05 /* mute-open.pdf in Resources */,
+				A9EEE6941CA6101D008D0A05 /* Assets.xcassets in Resources */,
+				A9EEE6BA1CA74C4F008D0A05 /* phone-pickup-alternative.pdf in Resources */,
+				A9EEE6B01CA614D4008D0A05 /* PrefsController.xib in Resources */,
+				A9EEE6DC1CA9652D008D0A05 /* window-background.pdf in Resources */,
+				A9EEE6971CA6101D008D0A05 /* MainMenu.xib in Resources */,
+				A9EEE6D91CA8B364008D0A05 /* record-ready.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EEE69B1CA6101D008D0A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9EEE6861CA6101C008D0A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EEE6921CA6101D008D0A05 /* main.m in Sources */,
+				A9EEE68F1CA6101D008D0A05 /* AppDelegate.m in Sources */,
+				A9EEE6CB1CA8750B008D0A05 /* LevelMeterView.m in Sources */,
+				A9EEE6AF1CA614D4008D0A05 /* PrefsController.m in Sources */,
+				A9EEE6BD1CA74ED1008D0A05 /* State.m in Sources */,
+				A9EEE6CE1CA87FD6008D0A05 /* CallButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EEE6991CA6101D008D0A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EEE6A21CA6101D008D0A05 /* sputnikUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9EEE69F1CA6101D008D0A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9EEE6891CA6101C008D0A05 /* Sputnik */;
+			targetProxy = A9EEE69E1CA6101D008D0A05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9EEE6951CA6101D008D0A05 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9EEE6961CA6101D008D0A05 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9EEE6A41CA6101D008D0A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A9EEE6A51CA6101D008D0A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A9EEE6A71CA6101D008D0A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = sputnik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.studio-link.sputnik";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9EEE6A81CA6101D008D0A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = sputnik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.studio-link.sputnik";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9EEE6AA1CA6101D008D0A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = sputnikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.studiolink.sputnikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = sputnik;
+			};
+			name = Debug;
+		};
+		A9EEE6AB1CA6101D008D0A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = sputnikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.studiolink.sputnikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = sputnik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9EEE6851CA6101C008D0A05 /* Build configuration list for PBXProject "sputnik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EEE6A41CA6101D008D0A05 /* Debug */,
+				A9EEE6A51CA6101D008D0A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EEE6A61CA6101D008D0A05 /* Build configuration list for PBXNativeTarget "Sputnik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EEE6A71CA6101D008D0A05 /* Debug */,
+				A9EEE6A81CA6101D008D0A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EEE6A91CA6101D008D0A05 /* Build configuration list for PBXNativeTarget "sputnikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EEE6AA1CA6101D008D0A05 /* Debug */,
+				A9EEE6AB1CA6101D008D0A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9EEE6821CA6101C008D0A05 /* Project object */;
+}

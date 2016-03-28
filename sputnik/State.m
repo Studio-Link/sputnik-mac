@@ -1,4 +1,4 @@
-//  Copyright (c) 2013 - 2016, Sebastian Reimers - studio-link.de
+//  Copyright (c) 2013 - 2016, Sebastian Reimers, Andi Pieper - studio-link.de
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
@@ -40,6 +40,8 @@
 
 @implementation State
 
+#pragma - simulate UI
+
 -(void)simulateCall
 {
   [self.simulTimer invalidate];
@@ -48,10 +50,14 @@
   self.levelTimer = nil;
   self.inLevel = 0;
   self.outLevel = 0;
+  self.recordingPossible = NO;
+  self.statusText = @"Not connected";
+  self.isRecording = NO;
 
   switch(_callState) {
   case 0:
     self.callState = 1;
+    self.statusText = @"Connecting…";
     self.simulTimer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(simulateConnect:) userInfo:nil repeats:NO];
     break;
   case 1:
@@ -66,6 +72,8 @@
 -(void) simulateConnect:(id)_timer
 {
   self.callState = 2;
+  self.statusText = @"Connected";
+  self.recordingPossible = YES;
   [self.simulTimer invalidate];
   self.simulTimer = nil;
   self.levelTimer = [NSTimer timerWithTimeInterval:0.01 target:self selector:@selector(simulateLevel:) userInfo:nil repeats:YES];
@@ -74,8 +82,12 @@
 
 -(void) simulateLevel:(id)_timer
 {
-  self.inLevel = self.inLevel - 0.01;
-  if(self.inLevel < 0.0) self.inLevel = 1.0;
+  if (self.muted) {
+    self.inLevel = 0.0;
+  } else {
+    self.inLevel = self.inLevel - 0.01;
+    if(self.inLevel < 0.0) self.inLevel = 1.0;
+  }
   self.outLevel = self.outLevel - 0.009;
   if(self.outLevel < 0.0) self.outLevel = 1.0;
 }

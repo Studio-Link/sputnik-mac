@@ -1,4 +1,4 @@
-//  Copyright (c) 2013 - 2016, Sebastian Reimers - studio-link.de
+//  Copyright (c) 2013 - 2016, Sebastian Reimers, Andi Pieper - studio-link.de
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
@@ -35,9 +35,15 @@
 @property(nonatomic) NSInteger callState;
 @property(strong, nonatomic) NSString* myID;
 @property(strong, nonatomic) NSString* remoteID;
-@property(strong, nonatomic) NSString* info;
+@property(strong, nonatomic) NSString* statusText;
 @property(nonatomic) Float32 inLevel;
 @property(nonatomic) Float32 outLevel;
+@property(nonatomic) BOOL recordingPossible;
+@property(nonatomic) BOOL isRecording;
+@property(nonatomic) BOOL muted;
+
+
+
 
 -(void)simulateCall;
 

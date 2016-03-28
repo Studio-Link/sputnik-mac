@@ -1,4 +1,4 @@
-//  Copyright (c) 2013 - 2016, Sebastian Reimers - studio-link.de
+//  Copyright (c) 2013 - 2016, Sebastian Reimers, Andi Pieper - studio-link.de
 //  All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
@@ -69,11 +69,8 @@
   self.state.inLevel = 0.0;
   self.state.outLevel = 0.0;
   
-  
   // bind the call button to the state
   [_callButton bind:@"callState" toObject:_stateController withKeyPath:@"selection.callState" options:nil];
-  
-  
   
   // set the window background on the layer
   //[[_window contentView] layer].backgroundColor = [NSColor whiteColor].CGColor;

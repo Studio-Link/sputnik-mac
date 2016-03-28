@@ -16,7 +16,9 @@
             <connections>
                 <outlet property="callButton" destination="RMu-kP-dQO" id="62B-s5-oPN"/>
                 <outlet property="inMeter" destination="n75-qD-PZt" id="Jrs-MP-qQW"/>
+                <outlet property="inputDevicesArrayController" destination="MO7-a1-sUN" id="Ied-NF-r80"/>
                 <outlet property="outMeter" destination="a1w-Xq-rse" id="nPV-ZG-s8F"/>
+                <outlet property="outputDevicesArrayController" destination="jT8-yV-4Ap" id="bBd-pg-yy6"/>
                 <outlet property="stateController" destination="4pU-mt-PWV" id="nkQ-ip-wuz"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -758,12 +760,6 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="n75-qD-PZt" customClass="LevelMeterView">
-                        <rect key="frame" x="214" y="56" width="178" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="LaH-SV-adH"/>
-                        </constraints>
-                    </customView>
                     <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iPD-dU-jKF" customClass="CallButton">
                         <rect key="frame" x="295" y="134" width="55" height="55"/>
                         <constraints>
@@ -804,8 +800,29 @@
                             <binding destination="4pU-mt-PWV" name="value" keyPath="selection.statusText" id="RhC-aY-Jcx"/>
                         </connections>
                     </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="haY-AR-mnx">
+                        <rect key="frame" x="18" y="53" width="191" height="25"/>
+                        <popUpButtonCell key="cell" type="push" title="Headset Mikro" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" selectedItem="Kpd-4M-7oz" id="WaJ-90-yOl">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="1q7-AG-7T5">
+                                <items>
+                                    <menuItem title="Headset Mikro" state="on" id="Kpd-4M-7oz"/>
+                                    <menuItem title="Mikro (eingebaut)" id="hDz-7u-aKe">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="H6 Input0" id="38D-Xe-u2e"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="MO7-a1-sUN" name="content" keyPath="arrangedObjects" id="rJk-Kq-zw5"/>
+                            <binding destination="MO7-a1-sUN" name="contentValues" keyPath="arrangedObjects.name" previousBinding="rJk-Kq-zw5" id="gtF-8A-Gwk"/>
+                            <binding destination="4pU-mt-PWV" name="selectedObject" keyPath="selection.inputDevice" previousBinding="gtF-8A-Gwk" id="KtA-6p-FgV"/>
+                        </connections>
+                    </popUpButton>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2jN-Z4-8DB">
-                        <rect key="frame" x="415" y="51" width="191" height="26"/>
+                        <rect key="frame" x="415" y="53" width="191" height="25"/>
                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="ThZ-sI-Npo">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -817,6 +834,11 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <binding destination="jT8-yV-4Ap" name="content" keyPath="arrangedObjects" id="mgb-Vh-BLj"/>
+                            <binding destination="jT8-yV-4Ap" name="contentValues" keyPath="arrangedObjects.name" previousBinding="mgb-Vh-BLj" id="aP4-l2-TCn"/>
+                            <binding destination="4pU-mt-PWV" name="selectedObject" keyPath="selection.outputDevice" previousBinding="aP4-l2-TCn" id="VQb-nO-DOr"/>
+                        </connections>
                     </popUpButton>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="soP-fT-Tx7">
                         <rect key="frame" x="18" y="84" width="376" height="17"/>
@@ -835,24 +857,14 @@
                         </textFieldCell>
                     </textField>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="a1w-Xq-rse" customClass="LevelMeterView">
-                        <rect key="frame" x="611" y="54" width="178" height="21"/>
+                        <rect key="frame" x="611" y="56" width="178" height="20"/>
                     </customView>
-                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="haY-AR-mnx">
-                        <rect key="frame" x="18" y="53" width="191" height="25"/>
-                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="WaJ-90-yOl">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
-                            <menu key="menu" id="1q7-AG-7T5">
-                                <items>
-                                    <menuItem title="Headset Mikro" id="Kpd-4M-7oz"/>
-                                    <menuItem title="Mikro (eingebaut)" id="hDz-7u-aKe">
-                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                    </menuItem>
-                                    <menuItem title="H6 Input0" id="38D-Xe-u2e"/>
-                                </items>
-                            </menu>
-                        </popUpButtonCell>
-                    </popUpButton>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="n75-qD-PZt" customClass="LevelMeterView">
+                        <rect key="frame" x="214" y="56" width="178" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="LaH-SV-adH"/>
+                        </constraints>
+                    </customView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Ici-f3-gkb" firstAttribute="leading" secondItem="X2U-0a-jNk" secondAttribute="trailing" constant="8" id="37q-ER-RYj"/>
@@ -872,18 +884,19 @@
                     <constraint firstItem="gJD-rH-YUX" firstAttribute="top" secondItem="yCG-jO-PNl" secondAttribute="bottom" constant="8" id="Lqa-Da-5jf"/>
                     <constraint firstAttribute="bottom" secondItem="Ici-f3-gkb" secondAttribute="bottom" constant="24" id="LsM-5t-NJ6"/>
                     <constraint firstItem="RMu-kP-dQO" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="O8I-zx-Z3H"/>
+                    <constraint firstItem="2jN-Z4-8DB" firstAttribute="height" secondItem="n75-qD-PZt" secondAttribute="height" id="ODH-ox-oen"/>
                     <constraint firstItem="soP-fT-Tx7" firstAttribute="width" secondItem="gJD-rH-YUX" secondAttribute="width" id="OmU-qi-Ej4"/>
                     <constraint firstItem="ADl-gs-6Bz" firstAttribute="top" secondItem="OIT-H0-xZh" secondAttribute="bottom" constant="8" id="Oym-ED-HRI"/>
                     <constraint firstItem="a1w-Xq-rse" firstAttribute="trailing" secondItem="ADl-gs-6Bz" secondAttribute="trailing" id="Qhn-hu-tfQ"/>
                     <constraint firstItem="yCG-jO-PNl" firstAttribute="centerX" secondItem="gJD-rH-YUX" secondAttribute="centerX" id="XMb-GP-ZDt"/>
                     <constraint firstItem="haY-AR-mnx" firstAttribute="width" secondItem="soP-fT-Tx7" secondAttribute="width" multiplier="0.5" id="YdA-Al-3D7"/>
-                    <constraint firstItem="a1w-Xq-rse" firstAttribute="top" secondItem="L2I-HO-RzJ" secondAttribute="bottom" constant="9" id="Z1U-yH-bb6"/>
                     <constraint firstItem="ADl-gs-6Bz" firstAttribute="leading" secondItem="gJD-rH-YUX" secondAttribute="trailing" constant="25" id="aBG-a3-1sG"/>
                     <constraint firstAttribute="bottom" secondItem="X2U-0a-jNk" secondAttribute="bottom" constant="20" id="aeN-Hh-UiH"/>
-                    <constraint firstItem="2jN-Z4-8DB" firstAttribute="top" secondItem="L2I-HO-RzJ" secondAttribute="bottom" constant="9" id="biN-1P-nXd"/>
+                    <constraint firstItem="2jN-Z4-8DB" firstAttribute="top" secondItem="L2I-HO-RzJ" secondAttribute="bottom" constant="8" id="biN-1P-nXd"/>
                     <constraint firstItem="a1w-Xq-rse" firstAttribute="leading" secondItem="2jN-Z4-8DB" secondAttribute="trailing" constant="8" id="dBl-hA-FeC"/>
                     <constraint firstItem="haY-AR-mnx" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="dXl-Q7-Yjn"/>
                     <constraint firstItem="gJD-rH-YUX" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="drP-DA-IZt"/>
+                    <constraint firstItem="a1w-Xq-rse" firstAttribute="centerY" secondItem="2jN-Z4-8DB" secondAttribute="centerY" id="dyS-OZ-hzC"/>
                     <constraint firstItem="soP-fT-Tx7" firstAttribute="top" secondItem="RMu-kP-dQO" secondAttribute="bottom" constant="20" id="e3I-Bk-df4"/>
                     <constraint firstItem="n75-qD-PZt" firstAttribute="height" secondItem="haY-AR-mnx" secondAttribute="height" id="eeA-uy-2fg"/>
                     <constraint firstItem="2jN-Z4-8DB" firstAttribute="leading" secondItem="L2I-HO-RzJ" secondAttribute="leading" id="f9j-Dv-8QC"/>
@@ -897,10 +910,10 @@
                     <constraint firstItem="8Fz-1i-Hi9" firstAttribute="leading" secondItem="RMu-kP-dQO" secondAttribute="trailing" constant="15" id="mQj-Mg-ROE"/>
                     <constraint firstAttribute="trailing" secondItem="Ici-f3-gkb" secondAttribute="trailing" constant="20" id="o1a-TQ-se3"/>
                     <constraint firstItem="soP-fT-Tx7" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="oI8-Lv-x19"/>
-                    <constraint firstItem="n75-qD-PZt" firstAttribute="top" secondItem="soP-fT-Tx7" secondAttribute="bottom" constant="8" id="pUg-AD-Pob"/>
                     <constraint firstItem="L2I-HO-RzJ" firstAttribute="width" secondItem="ADl-gs-6Bz" secondAttribute="width" id="qIB-sP-XuT"/>
                     <constraint firstItem="gJD-rH-YUX" firstAttribute="width" secondItem="ADl-gs-6Bz" secondAttribute="width" id="sQf-b6-kTu"/>
                     <constraint firstItem="a1w-Xq-rse" firstAttribute="height" secondItem="2jN-Z4-8DB" secondAttribute="height" id="tbv-ig-zmS"/>
+                    <constraint firstItem="n75-qD-PZt" firstAttribute="centerY" secondItem="haY-AR-mnx" secondAttribute="centerY" id="veH-mw-JFK"/>
                     <constraint firstItem="2jN-Z4-8DB" firstAttribute="width" secondItem="L2I-HO-RzJ" secondAttribute="width" multiplier="0.5" id="xsB-PV-Sok"/>
                 </constraints>
             </view>
@@ -915,6 +928,8 @@
             </buttonCell>
         </button>
         <objectController objectClassName="State" id="4pU-mt-PWV"/>
+        <arrayController id="MO7-a1-sUN"/>
+        <arrayController id="jT8-yV-4Ap"/>
         <userDefaultsController id="bz8-FY-qNz"/>
         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="QFq-5a-4Az">
             <rect key="frame" x="0.0" y="0.0" width="38" height="17"/>

@@ -31,6 +31,8 @@
 #import "AppDelegate.h"
 
 #import "State.h"
+#import "StudioLink.h"
+#import "EnumBuiltInDevices.h"
 
 @interface AppDelegate ()
 
@@ -76,6 +78,29 @@
   //[[_window contentView] layer].backgroundColor = [NSColor whiteColor].CGColor;
   [[_window contentView] layer].contents = [NSImage imageNamed:@"window-background.pdf"];
   [[_window contentView] layer].contentsGravity = kCAGravityResizeAspectFill;
+  
+  // enumerate device lists
+  self.outputDevicesArrayController.content = [self deviceList:HEADPHONE];
+  self.inputDevicesArrayController.content = [self deviceList:MICROPHONE];
+}
+
+-(NSArray*)deviceList:(STUDIO_LINK_DEVICE_TYPE)deviceType
+{
+  NSMutableArray* ret = [NSMutableArray arrayWithCapacity:64];
+  STUDIO_LINK_DEVICE_LIST devices = {0};
+  devices.version = 1;
+  const bool result = StudioLinkEnumBuiltinDevices(deviceType, &devices);
+  if(result == true)
+  {
+    for(size_t i = 0; i < devices.deviceCount; i++)
+    {
+      [ret addObject:[NSDictionary dictionaryWithObjectsAndKeys:
+                               [NSString stringWithUTF8String:devices.devices[i].name], @"name",
+                               [NSNumber numberWithLong:i], @"index",
+                               nil]];
+    }    
+  }
+  return ret;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification

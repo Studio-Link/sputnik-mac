@@ -36,6 +36,8 @@
 @property (weak) IBOutlet NSObjectController *stateController;
 @property (weak) IBOutlet LevelMeterView *inMeter;
 @property (weak) IBOutlet LevelMeterView *outMeter;
+@property (weak) IBOutlet NSArrayController *inputDevicesArrayController;
+@property (weak) IBOutlet NSArrayController *outputDevicesArrayController;
 
 
 - (IBAction)prefsClicked:(id)sender;

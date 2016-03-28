@@ -42,6 +42,8 @@
 @property(nonatomic) BOOL isRecording;
 @property(nonatomic) BOOL muted;
 
+@property(weak, nonatomic) id inputDevice;
+@property(weak, nonatomic) id outputDevice;
 
 
 

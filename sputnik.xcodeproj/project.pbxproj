@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9EEE68F1CA6101D008D0A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE68E1CA6101D008D0A05 /* AppDelegate.m */; };
+		A93786671CA9D95F00CCE2ED /* EnumBuiltinDevices_osx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A93786641CA9D95F00CCE2ED /* EnumBuiltinDevices_osx.cpp */; };
+		A93786681CA9D95F00CCE2ED /* StudioLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A93786661CA9D95F00CCE2ED /* StudioLink.cpp */; };
+		A937866B1CA9DDF400CCE2ED /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A937866A1CA9DDF400CCE2ED /* CoreFoundation.framework */; };
+		A937866D1CA9DDFD00CCE2ED /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A937866C1CA9DDFD00CCE2ED /* CoreAudio.framework */; };
+		A9EEE68F1CA6101D008D0A05 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE68E1CA6101D008D0A05 /* AppDelegate.mm */; };
 		A9EEE6921CA6101D008D0A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6911CA6101D008D0A05 /* main.m */; };
 		A9EEE6941CA6101D008D0A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6931CA6101D008D0A05 /* Assets.xcassets */; };
 		A9EEE6971CA6101D008D0A05 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6951CA6101D008D0A05 /* MainMenu.xib */; };
@@ -41,9 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A93786641CA9D95F00CCE2ED /* EnumBuiltinDevices_osx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnumBuiltinDevices_osx.cpp; path = "sputnik/studiolink-api/EnumBuiltinDevices_osx.cpp"; sourceTree = "<group>"; };
+		A93786651CA9D95F00CCE2ED /* EnumBuiltinDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnumBuiltinDevices.h; path = "sputnik/studiolink-api/EnumBuiltinDevices.h"; sourceTree = "<group>"; };
+		A93786661CA9D95F00CCE2ED /* StudioLink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StudioLink.cpp; path = "sputnik/studiolink-api/StudioLink.cpp"; sourceTree = "<group>"; };
+		A93786691CA9D99600CCE2ED /* StudioLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StudioLink.h; path = "sputnik/studiolink-api/StudioLink.h"; sourceTree = "<group>"; };
+		A937866A1CA9DDF400CCE2ED /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A937866C1CA9DDFD00CCE2ED /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		A9EEE68A1CA6101C008D0A05 /* Sputnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sputnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EEE68D1CA6101C008D0A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A9EEE68E1CA6101D008D0A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9EEE68E1CA6101D008D0A05 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		A9EEE6911CA6101D008D0A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9EEE6931CA6101D008D0A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9EEE6961CA6101D008D0A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -78,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A937866D1CA9DDFD00CCE2ED /* CoreAudio.framework in Frameworks */,
+				A937866B1CA9DDF400CCE2ED /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A93786631CA9D94C00CCE2ED /* studiolink-api */ = {
+			isa = PBXGroup;
+			children = (
+				A93786651CA9D95F00CCE2ED /* EnumBuiltinDevices.h */,
+				A93786641CA9D95F00CCE2ED /* EnumBuiltinDevices_osx.cpp */,
+				A93786691CA9D99600CCE2ED /* StudioLink.h */,
+				A93786661CA9D95F00CCE2ED /* StudioLink.cpp */,
+			);
+			name = "studiolink-api";
+			sourceTree = "<group>";
+		};
 		A9EEE6811CA6101C008D0A05 = {
 			isa = PBXGroup;
 			children = (
+				A937866C1CA9DDFD00CCE2ED /* CoreAudio.framework */,
+				A937866A1CA9DDF400CCE2ED /* CoreFoundation.framework */,
+				A93786631CA9D94C00CCE2ED /* studiolink-api */,
 				A9EEE6B81CA746D5008D0A05 /* assets */,
 				A9EEE68C1CA6101C008D0A05 /* sputnik */,
 				A9EEE6A01CA6101D008D0A05 /* sputnikUITests */,
@@ -114,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A9EEE68D1CA6101C008D0A05 /* AppDelegate.h */,
-				A9EEE68E1CA6101D008D0A05 /* AppDelegate.m */,
+				A9EEE68E1CA6101D008D0A05 /* AppDelegate.mm */,
 				A9EEE6931CA6101D008D0A05 /* Assets.xcassets */,
 				A9EEE6951CA6101D008D0A05 /* MainMenu.xib */,
 				A9EEE6981CA6101D008D0A05 /* Info.plist */,
@@ -216,6 +242,7 @@
 				TargetAttributes = {
 					A9EEE6891CA6101C008D0A05 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5B9G7C948C;
 					};
 					A9EEE69C1CA6101D008D0A05 = {
 						CreatedOnToolsVersion = 7.3;
@@ -279,9 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EEE6921CA6101D008D0A05 /* main.m in Sources */,
-				A9EEE68F1CA6101D008D0A05 /* AppDelegate.m in Sources */,
+				A9EEE68F1CA6101D008D0A05 /* AppDelegate.mm in Sources */,
 				A9EEE6CB1CA8750B008D0A05 /* LevelMeterView.m in Sources */,
 				A9EEE6AF1CA614D4008D0A05 /* PrefsController.m in Sources */,
+				A93786671CA9D95F00CCE2ED /* EnumBuiltinDevices_osx.cpp in Sources */,
+				A93786681CA9D95F00CCE2ED /* StudioLink.cpp in Sources */,
 				A9EEE6BD1CA74ED1008D0A05 /* State.m in Sources */,
 				A9EEE6CE1CA87FD6008D0A05 /* CallButton.m in Sources */,
 			);

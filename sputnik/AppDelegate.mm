@@ -33,6 +33,7 @@
 #import "State.h"
 #import "StudioLink.h"
 #import "EnumBuiltInDevices.h"
+#import "NSWindow+Flipping.h"
 
 @interface AppDelegate ()
 
@@ -82,6 +83,9 @@
   // enumerate device lists
   self.outputDevicesArrayController.content = [self deviceList:HEADPHONE];
   self.inputDevicesArrayController.content = [self deviceList:MICROPHONE];
+  
+  // subscribe to the prefs comitted messages
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(closePrefs:) name:@"commitPrefs" object:nil];
 }
 
 -(NSArray*)deviceList:(STUDIO_LINK_DEVICE_TYPE)deviceType
@@ -109,6 +113,14 @@
 
 - (IBAction)prefsClicked:(id)sender
 {
+  self.prefsController = [[PrefsController alloc] initWithWindowNibName:@"PrefsController"];
+  [self.window flipToShowWindow:self.prefsController.window forward:YES];
+}
+
+- (IBAction)closePrefs:(id)_notification;
+{
+  [self.prefsController.window flipToShowWindow:self.window forward:NO];
+  self.prefsController = nil;
 }
 
 - (IBAction)callButtonClicked:(id)sender {

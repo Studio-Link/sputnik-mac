@@ -29,6 +29,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "LevelMeterView.h"
+#import "PrefsController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
@@ -38,10 +39,11 @@
 @property (weak) IBOutlet LevelMeterView *outMeter;
 @property (weak) IBOutlet NSArrayController *inputDevicesArrayController;
 @property (weak) IBOutlet NSArrayController *outputDevicesArrayController;
-
+@property (strong) PrefsController* prefsController;
 
 - (IBAction)prefsClicked:(id)sender;
 - (IBAction)callButtonClicked:(id)sender;
+- (IBAction)closePrefs:(id)sender;
 
 @end
 

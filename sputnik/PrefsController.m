@@ -38,12 +38,16 @@
 
 - (void)windowDidLoad
 {
-    [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+  [super windowDidLoad];
+  [[self.window contentView] setWantsLayer:YES];
+  self.window.titlebarAppearsTransparent = YES;
+  self.window.movableByWindowBackground  = YES;
+  self.window.backgroundColor = [NSColor colorWithCalibratedRed:1 green:1 blue:1 alpha:1.00];
+  self.window.title = @"";
+  [[self.window contentView] layer].backgroundColor = [NSColor whiteColor].CGColor;
 }
 
-- (IBAction)commitClicked:(id)sender
-{
+- (IBAction)commitClicked:(id)sender {
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"commitPrefs" object:nil];
 }
 @end

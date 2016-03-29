@@ -11,6 +11,9 @@
 		A93786681CA9D95F00CCE2ED /* StudioLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A93786661CA9D95F00CCE2ED /* StudioLink.cpp */; };
 		A937866B1CA9DDF400CCE2ED /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A937866A1CA9DDF400CCE2ED /* CoreFoundation.framework */; };
 		A937866D1CA9DDFD00CCE2ED /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A937866C1CA9DDFD00CCE2ED /* CoreAudio.framework */; };
+		A93786701CA9E82600CCE2ED /* NSWindow+Flipping.m in Sources */ = {isa = PBXBuildFile; fileRef = A937866F1CA9E82600CCE2ED /* NSWindow+Flipping.m */; };
+		A93786721CAA8C8400CCE2ED /* commit.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A93786711CAA8C8400CCE2ED /* commit.pdf */; };
+		A93786741CAA8F9E00CCE2ED /* commit-alternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A93786731CAA8F9E00CCE2ED /* commit-alternative.pdf */; };
 		A9EEE68F1CA6101D008D0A05 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE68E1CA6101D008D0A05 /* AppDelegate.mm */; };
 		A9EEE6921CA6101D008D0A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEE6911CA6101D008D0A05 /* main.m */; };
 		A9EEE6941CA6101D008D0A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EEE6931CA6101D008D0A05 /* Assets.xcassets */; };
@@ -51,6 +54,10 @@
 		A93786691CA9D99600CCE2ED /* StudioLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StudioLink.h; path = "sputnik/studiolink-api/StudioLink.h"; sourceTree = "<group>"; };
 		A937866A1CA9DDF400CCE2ED /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A937866C1CA9DDFD00CCE2ED /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A937866E1CA9E82600CCE2ED /* NSWindow+Flipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Flipping.h"; sourceTree = "<group>"; };
+		A937866F1CA9E82600CCE2ED /* NSWindow+Flipping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Flipping.m"; sourceTree = "<group>"; };
+		A93786711CAA8C8400CCE2ED /* commit.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = commit.pdf; path = sputnik/assets/commit.pdf; sourceTree = "<group>"; };
+		A93786731CAA8F9E00CCE2ED /* commit-alternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "commit-alternative.pdf"; path = "sputnik/assets/commit-alternative.pdf"; sourceTree = "<group>"; };
 		A9EEE68A1CA6101C008D0A05 /* Sputnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sputnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EEE68D1CA6101C008D0A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9EEE68E1CA6101D008D0A05 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -154,6 +161,8 @@
 				A9EEE6CA1CA8750B008D0A05 /* LevelMeterView.m */,
 				A9EEE6CC1CA87FD6008D0A05 /* CallButton.h */,
 				A9EEE6CD1CA87FD6008D0A05 /* CallButton.m */,
+				A937866E1CA9E82600CCE2ED /* NSWindow+Flipping.h */,
+				A937866F1CA9E82600CCE2ED /* NSWindow+Flipping.m */,
 			);
 			path = sputnik;
 			sourceTree = "<group>";
@@ -189,6 +198,8 @@
 				A9EEE6D71CA8B364008D0A05 /* record-ready.pdf */,
 				A9EEE6D81CA8B364008D0A05 /* record-recording.pdf */,
 				A9EEE6DB1CA9652D008D0A05 /* window-background.pdf */,
+				A93786711CAA8C8400CCE2ED /* commit.pdf */,
+				A93786731CAA8F9E00CCE2ED /* commit-alternative.pdf */,
 			);
 			name = assets;
 			sourceTree = "<group>";
@@ -277,7 +288,9 @@
 				A9EEE6BF1CA871A4008D0A05 /* cogwheel.pdf in Resources */,
 				A9EEE6D01CA89766008D0A05 /* phone-hangup.pdf in Resources */,
 				A9EEE6B71CA746CC008D0A05 /* phone-pickup.pdf in Resources */,
+				A93786741CAA8F9E00CCE2ED /* commit-alternative.pdf in Resources */,
 				A9EEE6C11CA871F7008D0A05 /* cogwheel-alternative.pdf in Resources */,
+				A93786721CAA8C8400CCE2ED /* commit.pdf in Resources */,
 				A9EEE6D21CA897E7008D0A05 /* phone-hangup-aternative.pdf in Resources */,
 				A9EEE6D51CA8AE4D008D0A05 /* mute-muted.pdf in Resources */,
 				A9EEE6DA1CA8B364008D0A05 /* record-recording.pdf in Resources */,
@@ -312,6 +325,7 @@
 				A93786671CA9D95F00CCE2ED /* EnumBuiltinDevices_osx.cpp in Sources */,
 				A93786681CA9D95F00CCE2ED /* StudioLink.cpp in Sources */,
 				A9EEE6BD1CA74ED1008D0A05 /* State.m in Sources */,
+				A93786701CA9E82600CCE2ED /* NSWindow+Flipping.m in Sources */,
 				A9EEE6CE1CA87FD6008D0A05 /* CallButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

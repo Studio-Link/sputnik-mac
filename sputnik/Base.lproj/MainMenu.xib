@@ -747,7 +747,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yCG-jO-PNl">
                         <rect key="frame" x="18" y="262" width="376" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="My Number" id="qm1-ea-fXL">
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -755,7 +755,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-H0-xZh">
                         <rect key="frame" x="415" y="262" width="376" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Remote Number" id="XbL-Sf-9aK">
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -792,7 +792,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ici-f3-gkb">
                         <rect key="frame" x="51" y="24" width="740" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status" id="Ndb-gF-Xrt">
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -804,7 +804,7 @@
                         <rect key="frame" x="18" y="53" width="191" height="25"/>
                         <popUpButtonCell key="cell" type="push" title="Headset Mikro" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" selectedItem="Kpd-4M-7oz" id="WaJ-90-yOl">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <menu key="menu" id="1q7-AG-7T5">
                                 <items>
                                     <menuItem title="Headset Mikro" state="on" id="Kpd-4M-7oz"/>
@@ -825,7 +825,7 @@
                         <rect key="frame" x="415" y="53" width="191" height="25"/>
                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" arrowPosition="arrowAtCenter" id="ThZ-sI-Npo">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <menu key="menu" id="6fk-Lo-sSx">
                                 <items>
                                     <menuItem title="Headset Out" id="1bp-9C-Vh5"/>
@@ -843,7 +843,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="soP-fT-Tx7">
                         <rect key="frame" x="18" y="84" width="376" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Microphone Device" id="Hjv-zy-FfZ">
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -851,7 +851,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-HO-RzJ">
                         <rect key="frame" x="415" y="84" width="376" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Headphone Device" id="Tc5-Ep-5FC">
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="systemLight" size="13"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>

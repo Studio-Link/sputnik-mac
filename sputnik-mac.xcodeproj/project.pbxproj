@@ -11,6 +11,8 @@
 		A91274621D38E1AB003F4E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91274611D38E1AB003F4E60 /* Assets.xcassets */; };
 		A91274651D38E1AB003F4E60 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91274631D38E1AB003F4E60 /* MainMenu.xib */; };
 		A91274701D38E1AB003F4E60 /* sputnik_macUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912746F1D38E1AB003F4E60 /* sputnik_macUITests.swift */; };
+		A912747B1D38E319003F4E60 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A912747A1D38E319003F4E60 /* CoreAudio.framework */; };
+		A912747D1D38E325003F4E60 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A912747C1D38E325003F4E60 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		A912746B1D38E1AB003F4E60 /* sputnik-macUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sputnik-macUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A912746F1D38E1AB003F4E60 /* sputnik_macUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sputnik_macUITests.swift; sourceTree = "<group>"; };
 		A91274711D38E1AB003F4E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A912747A1D38E319003F4E60 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A912747C1D38E325003F4E60 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A912747D1D38E325003F4E60 /* CoreFoundation.framework in Frameworks */,
+				A912747B1D38E319003F4E60 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +61,12 @@
 		A91274531D38E1AB003F4E60 = {
 			isa = PBXGroup;
 			children = (
+				A912747C1D38E325003F4E60 /* CoreFoundation.framework */,
+				A912747A1D38E319003F4E60 /* CoreAudio.framework */,
 				A912745E1D38E1AB003F4E60 /* sputnik-mac */,
 				A912746E1D38E1AB003F4E60 /* sputnik-macUITests */,
 				A912745D1D38E1AB003F4E60 /* Products */,
+				A912747E1D38E33E003F4E60 /* assets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +97,13 @@
 				A91274711D38E1AB003F4E60 /* Info.plist */,
 			);
 			path = "sputnik-macUITests";
+			sourceTree = "<group>";
+		};
+		A912747E1D38E33E003F4E60 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

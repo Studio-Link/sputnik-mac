@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91274601D38E1AB003F4E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912745F1D38E1AB003F4E60 /* AppDelegate.swift */; };
+		A91274621D38E1AB003F4E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91274611D38E1AB003F4E60 /* Assets.xcassets */; };
+		A91274651D38E1AB003F4E60 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91274631D38E1AB003F4E60 /* MainMenu.xib */; };
+		A91274701D38E1AB003F4E60 /* sputnik_macUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912746F1D38E1AB003F4E60 /* sputnik_macUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A912746C1D38E1AB003F4E60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91274541D38E1AB003F4E60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A912745B1D38E1AB003F4E60;
+			remoteInfo = "sputnik-mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A912745C1D38E1AB003F4E60 /* sputnik-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sputnik-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A912745F1D38E1AB003F4E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A91274611D38E1AB003F4E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91274641D38E1AB003F4E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A91274661D38E1AB003F4E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A912746B1D38E1AB003F4E60 /* sputnik-macUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sputnik-macUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A912746F1D38E1AB003F4E60 /* sputnik_macUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sputnik_macUITests.swift; sourceTree = "<group>"; };
+		A91274711D38E1AB003F4E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91274591D38E1AB003F4E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91274681D38E1AB003F4E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A91274531D38E1AB003F4E60 = {
+			isa = PBXGroup;
+			children = (
+				A912745E1D38E1AB003F4E60 /* sputnik-mac */,
+				A912746E1D38E1AB003F4E60 /* sputnik-macUITests */,
+				A912745D1D38E1AB003F4E60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A912745D1D38E1AB003F4E60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A912745C1D38E1AB003F4E60 /* sputnik-mac.app */,
+				A912746B1D38E1AB003F4E60 /* sputnik-macUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A912745E1D38E1AB003F4E60 /* sputnik-mac */ = {
+			isa = PBXGroup;
+			children = (
+				A912745F1D38E1AB003F4E60 /* AppDelegate.swift */,
+				A91274611D38E1AB003F4E60 /* Assets.xcassets */,
+				A91274631D38E1AB003F4E60 /* MainMenu.xib */,
+				A91274661D38E1AB003F4E60 /* Info.plist */,
+			);
+			path = "sputnik-mac";
+			sourceTree = "<group>";
+		};
+		A912746E1D38E1AB003F4E60 /* sputnik-macUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A912746F1D38E1AB003F4E60 /* sputnik_macUITests.swift */,
+				A91274711D38E1AB003F4E60 /* Info.plist */,
+			);
+			path = "sputnik-macUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A912745B1D38E1AB003F4E60 /* sputnik-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91274741D38E1AB003F4E60 /* Build configuration list for PBXNativeTarget "sputnik-mac" */;
+			buildPhases = (
+				A91274581D38E1AB003F4E60 /* Sources */,
+				A91274591D38E1AB003F4E60 /* Frameworks */,
+				A912745A1D38E1AB003F4E60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sputnik-mac";
+			productName = "sputnik-mac";
+			productReference = A912745C1D38E1AB003F4E60 /* sputnik-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A912746A1D38E1AB003F4E60 /* sputnik-macUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91274771D38E1AB003F4E60 /* Build configuration list for PBXNativeTarget "sputnik-macUITests" */;
+			buildPhases = (
+				A91274671D38E1AB003F4E60 /* Sources */,
+				A91274681D38E1AB003F4E60 /* Frameworks */,
+				A91274691D38E1AB003F4E60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A912746D1D38E1AB003F4E60 /* PBXTargetDependency */,
+			);
+			name = "sputnik-macUITests";
+			productName = "sputnik-macUITests";
+			productReference = A912746B1D38E1AB003F4E60 /* sputnik-macUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91274541D38E1AB003F4E60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "studio-link";
+				TargetAttributes = {
+					A912745B1D38E1AB003F4E60 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A912746A1D38E1AB003F4E60 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A912745B1D38E1AB003F4E60;
+					};
+				};
+			};
+			buildConfigurationList = A91274571D38E1AB003F4E60 /* Build configuration list for PBXProject "sputnik-mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A91274531D38E1AB003F4E60;
+			productRefGroup = A912745D1D38E1AB003F4E60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A912745B1D38E1AB003F4E60 /* sputnik-mac */,
+				A912746A1D38E1AB003F4E60 /* sputnik-macUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A912745A1D38E1AB003F4E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91274621D38E1AB003F4E60 /* Assets.xcassets in Resources */,
+				A91274651D38E1AB003F4E60 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91274691D38E1AB003F4E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91274581D38E1AB003F4E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91274601D38E1AB003F4E60 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91274671D38E1AB003F4E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91274701D38E1AB003F4E60 /* sputnik_macUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A912746D1D38E1AB003F4E60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A912745B1D38E1AB003F4E60 /* sputnik-mac */;
+			targetProxy = A912746C1D38E1AB003F4E60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A91274631D38E1AB003F4E60 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91274641D38E1AB003F4E60 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91274721D38E1AB003F4E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A91274731D38E1AB003F4E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A91274751D38E1AB003F4E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sputnik-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.studio-link.sputnik-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A91274761D38E1AB003F4E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sputnik-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.studio-link.sputnik-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A91274781D38E1AB003F4E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sputnik-macUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.studio-link.sputnik-macUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "sputnik-mac";
+			};
+			name = Debug;
+		};
+		A91274791D38E1AB003F4E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sputnik-macUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.studio-link.sputnik-macUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "sputnik-mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91274571D38E1AB003F4E60 /* Build configuration list for PBXProject "sputnik-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91274721D38E1AB003F4E60 /* Debug */,
+				A91274731D38E1AB003F4E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91274741D38E1AB003F4E60 /* Build configuration list for PBXNativeTarget "sputnik-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91274751D38E1AB003F4E60 /* Debug */,
+				A91274761D38E1AB003F4E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A91274771D38E1AB003F4E60 /* Build configuration list for PBXNativeTarget "sputnik-macUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91274781D38E1AB003F4E60 /* Debug */,
+				A91274791D38E1AB003F4E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A91274541D38E1AB003F4E60 /* Project object */;
+}

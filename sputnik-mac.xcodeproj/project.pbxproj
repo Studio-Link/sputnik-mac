@@ -13,6 +13,19 @@
 		A91274701D38E1AB003F4E60 /* sputnik_macUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912746F1D38E1AB003F4E60 /* sputnik_macUITests.swift */; };
 		A912747B1D38E319003F4E60 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A912747A1D38E319003F4E60 /* CoreAudio.framework */; };
 		A912747D1D38E325003F4E60 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A912747C1D38E325003F4E60 /* CoreFoundation.framework */; };
+		A912748C1D38E4D8003F4E60 /* cogwheel-alternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A912747F1D38E4D8003F4E60 /* cogwheel-alternative.pdf */; };
+		A912748D1D38E4D8003F4E60 /* cogwheel.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274801D38E4D8003F4E60 /* cogwheel.pdf */; };
+		A912748E1D38E4D8003F4E60 /* commit-alternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274811D38E4D8003F4E60 /* commit-alternative.pdf */; };
+		A912748F1D38E4D8003F4E60 /* commit.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274821D38E4D8003F4E60 /* commit.pdf */; };
+		A91274901D38E4D8003F4E60 /* mute-muted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274831D38E4D8003F4E60 /* mute-muted.pdf */; };
+		A91274911D38E4D8003F4E60 /* mute-open.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274841D38E4D8003F4E60 /* mute-open.pdf */; };
+		A91274921D38E4D8003F4E60 /* phone-hangup-aternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274851D38E4D8003F4E60 /* phone-hangup-aternative.pdf */; };
+		A91274931D38E4D8003F4E60 /* phone-hangup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274861D38E4D8003F4E60 /* phone-hangup.pdf */; };
+		A91274941D38E4D8003F4E60 /* phone-pickup-alternative.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274871D38E4D8003F4E60 /* phone-pickup-alternative.pdf */; };
+		A91274951D38E4D8003F4E60 /* phone-pickup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274881D38E4D8003F4E60 /* phone-pickup.pdf */; };
+		A91274961D38E4D8003F4E60 /* record-ready.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A91274891D38E4D8003F4E60 /* record-ready.pdf */; };
+		A91274971D38E4D8003F4E60 /* record-recording.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A912748A1D38E4D8003F4E60 /* record-recording.pdf */; };
+		A91274981D38E4D8003F4E60 /* window-background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A912748B1D38E4D8003F4E60 /* window-background.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,21 @@
 		A91274711D38E1AB003F4E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A912747A1D38E319003F4E60 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		A912747C1D38E325003F4E60 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A912747F1D38E4D8003F4E60 /* cogwheel-alternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "cogwheel-alternative.pdf"; path = "sputnik-mac/assets/cogwheel-alternative.pdf"; sourceTree = "<group>"; };
+		A91274801D38E4D8003F4E60 /* cogwheel.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = cogwheel.pdf; path = "sputnik-mac/assets/cogwheel.pdf"; sourceTree = "<group>"; };
+		A91274811D38E4D8003F4E60 /* commit-alternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "commit-alternative.pdf"; path = "sputnik-mac/assets/commit-alternative.pdf"; sourceTree = "<group>"; };
+		A91274821D38E4D8003F4E60 /* commit.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = commit.pdf; path = "sputnik-mac/assets/commit.pdf"; sourceTree = "<group>"; };
+		A91274831D38E4D8003F4E60 /* mute-muted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "mute-muted.pdf"; path = "sputnik-mac/assets/mute-muted.pdf"; sourceTree = "<group>"; };
+		A91274841D38E4D8003F4E60 /* mute-open.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "mute-open.pdf"; path = "sputnik-mac/assets/mute-open.pdf"; sourceTree = "<group>"; };
+		A91274851D38E4D8003F4E60 /* phone-hangup-aternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-hangup-aternative.pdf"; path = "sputnik-mac/assets/phone-hangup-aternative.pdf"; sourceTree = "<group>"; };
+		A91274861D38E4D8003F4E60 /* phone-hangup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-hangup.pdf"; path = "sputnik-mac/assets/phone-hangup.pdf"; sourceTree = "<group>"; };
+		A91274871D38E4D8003F4E60 /* phone-pickup-alternative.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-pickup-alternative.pdf"; path = "sputnik-mac/assets/phone-pickup-alternative.pdf"; sourceTree = "<group>"; };
+		A91274881D38E4D8003F4E60 /* phone-pickup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "phone-pickup.pdf"; path = "sputnik-mac/assets/phone-pickup.pdf"; sourceTree = "<group>"; };
+		A91274891D38E4D8003F4E60 /* record-ready.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "record-ready.pdf"; path = "sputnik-mac/assets/record-ready.pdf"; sourceTree = "<group>"; };
+		A912748A1D38E4D8003F4E60 /* record-recording.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "record-recording.pdf"; path = "sputnik-mac/assets/record-recording.pdf"; sourceTree = "<group>"; };
+		A912748B1D38E4D8003F4E60 /* window-background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "window-background.pdf"; path = "sputnik-mac/assets/window-background.pdf"; sourceTree = "<group>"; };
+		A91274991D38E512003F4E60 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		A912749A1D38E53A003F4E60 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +89,8 @@
 		A91274531D38E1AB003F4E60 = {
 			isa = PBXGroup;
 			children = (
+				A912749A1D38E53A003F4E60 /* LICENSE */,
+				A91274991D38E512003F4E60 /* Readme.md */,
 				A912747C1D38E325003F4E60 /* CoreFoundation.framework */,
 				A912747A1D38E319003F4E60 /* CoreAudio.framework */,
 				A912745E1D38E1AB003F4E60 /* sputnik-mac */,
@@ -102,6 +132,19 @@
 		A912747E1D38E33E003F4E60 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				A912747F1D38E4D8003F4E60 /* cogwheel-alternative.pdf */,
+				A91274801D38E4D8003F4E60 /* cogwheel.pdf */,
+				A91274811D38E4D8003F4E60 /* commit-alternative.pdf */,
+				A91274821D38E4D8003F4E60 /* commit.pdf */,
+				A91274831D38E4D8003F4E60 /* mute-muted.pdf */,
+				A91274841D38E4D8003F4E60 /* mute-open.pdf */,
+				A91274851D38E4D8003F4E60 /* phone-hangup-aternative.pdf */,
+				A91274861D38E4D8003F4E60 /* phone-hangup.pdf */,
+				A91274871D38E4D8003F4E60 /* phone-pickup-alternative.pdf */,
+				A91274881D38E4D8003F4E60 /* phone-pickup.pdf */,
+				A91274891D38E4D8003F4E60 /* record-ready.pdf */,
+				A912748A1D38E4D8003F4E60 /* record-recording.pdf */,
+				A912748B1D38E4D8003F4E60 /* window-background.pdf */,
 			);
 			name = assets;
 			sourceTree = "<group>";
@@ -187,8 +230,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91274901D38E4D8003F4E60 /* mute-muted.pdf in Resources */,
 				A91274621D38E1AB003F4E60 /* Assets.xcassets in Resources */,
+				A912748F1D38E4D8003F4E60 /* commit.pdf in Resources */,
 				A91274651D38E1AB003F4E60 /* MainMenu.xib in Resources */,
+				A91274931D38E4D8003F4E60 /* phone-hangup.pdf in Resources */,
+				A912748E1D38E4D8003F4E60 /* commit-alternative.pdf in Resources */,
+				A912748D1D38E4D8003F4E60 /* cogwheel.pdf in Resources */,
+				A91274971D38E4D8003F4E60 /* record-recording.pdf in Resources */,
+				A91274951D38E4D8003F4E60 /* phone-pickup.pdf in Resources */,
+				A91274941D38E4D8003F4E60 /* phone-pickup-alternative.pdf in Resources */,
+				A912748C1D38E4D8003F4E60 /* cogwheel-alternative.pdf in Resources */,
+				A91274921D38E4D8003F4E60 /* phone-hangup-aternative.pdf in Resources */,
+				A91274981D38E4D8003F4E60 /* window-background.pdf in Resources */,
+				A91274911D38E4D8003F4E60 /* mute-open.pdf in Resources */,
+				A91274961D38E4D8003F4E60 /* record-ready.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +445,7 @@
 				A91274761D38E1AB003F4E60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A91274771D38E1AB003F4E60 /* Build configuration list for PBXNativeTarget "sputnik-macUITests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +454,7 @@
 				A91274791D38E1AB003F4E60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
